@@ -1,29 +1,55 @@
 # MSoC-2025 Internship Report
-## Migrate Android Client to Kotlin Multiplatform
 
----
+### Project Overview
 
-## Project Overview
-
-**Project:** Migration of Android Client to Kotlin Multiplatform (KMP)  
+**Project:** Migration of Android Client to Kotlin Multiplatform (KMP) <br>
+**Project Proposal:** [GSoC Proposal 2025](https://github.com/itsPronay/MSoC-2025/blob/main/google-summer-of-code-proposal-2025.pdf) <br>
 **Organization:** Mifos Initiative  
-**Duration:** June 2025 - September 2025
+**Official MSoC Duration:** June 2025 - September 2025  
 
 ---
 
-## Pre-MSoC Work
+## Pre-MSoC Work (March - May 2025)
 
-### Preparatory Contribution
-- **feat - Migrate hilt to koin** [#2337](https://github.com/openMF/android-client/pull/2337)
-  - Migrated dependency injection framework from Hilt to Koin to prepare for KMP migration
+### Android Client
+
+- [feat: Core/common to KMP #2351](https://github.com/openMF/android-client/pull/2351)
+- [feat: Migrate [core/database] to KMP #2354](https://github.com/openMF/android-client/pull/2354)
+- [feat - Migrate hilt to koin #2337](https://github.com/openMF/android-client/pull/2337) 
+- [Feat - CMP migration of feature/groups #2369](https://github.com/openMF/android-client/pull/2369)
+- [Migrate [feature/splash] to cmp #2370](https://github.com/openMF/android-client/pull/2370)
+- [feat : Migrate Datatable to cmp #2382](https://github.com/openMF/android-client/pull/2382)
+- [Integrate Fastlane and update CI workflows #2484](https://github.com/openMF/android-client/pull/2484)
+- [fixed App build issue + network calls #2383](https://github.com/openMF/android-client/pull/2383)
+- [fix: Fixed build failure #2329](https://github.com/openMF/android-client/pull/2329)
+- [fixed CMP plugin naming convention #2332](https://github.com/openMF/android-client/pull/2332)
+- [Removed testing module #2371](https://github.com/openMF/android-client/pull/2371)
+- [fix: Login was successful even it is not authenticated #2322](https://github.com/openMF/android-client/pull/2322)
+- [fix - Failed to fetch staffs in createNewClient screen #2357](https://github.com/openMF/android-client/pull/2357)
+- [fix: Can't create new client #2358](https://github.com/openMF/android-client/pull/2358)
+- [Fix: App crash on disburse loan Click #2336](https://github.com/openMF/android-client/pull/2336)
+- [[kmp branch] Fixed app crash on loan disbursement screen #2336](https://github.com/openMF/android-client/pull/2336)
+- [fix: Replaced hardcoded package name with context.packageName for FileProvider #2335](https://github.com/openMF/android-client/pull/2335)
+- [Updated zoom link #2326](https://github.com/openMF/android-client/pull/2326)
+
+### Mifos Mobile
+
+- [refactor: migrate feature/update-password to CMP #2802](https://github.com/openMF/mifos-mobile/pull/2802)
+- [refactor: [feature/guarantor] migrate to CMP #2808](https://github.com/openMF/mifos-mobile/pull/2808)
+- [feat: [feature/recent_transactions] to CMP #2810](https://github.com/openMF/mifos-mobile/pull/2810)
+
+### Pre-MSoC Impact
+- **Key Focus:** Core KMP migration work (database, common modules, features)
+- **Foundation Work:** Hilt to Koin migration, build system fixes, CI/CD improvements
+- **Impact:** Established groundwork for the full KMP migration during MSoC period
 
 ---
 
-## Monthly Progress Summary
+## Progress Summary
 
 ### June 2025
 
-**Focus:** Initial repository familiarization and CMP migration of core modules
+**Focus:** Initial repository familiarization and CMP migration of feature modules
 
 #### Android Client - Authored PRs
 
@@ -146,66 +172,13 @@
 10. **Sep 10** - [feat : New Loan Account – Charges Step Implementation #2497](https://github.com/openMF/android-client/pull/2497)
 11. **Sep 10** - [feature(savings): new savings account, details step impl #2500](https://github.com/openMF/android-client/pull/2500)
 
----
-
-## Key Achievements
-
-### Technical Contributions - Authored PRs
-
-1. **KMP Migration Leadership**
-   - Led the migration of core modules to Kotlin Multiplatform
-   - Key modules: Savings, Path Tracking, Collection Sheet (June-July)
-
-2. **Desktop Platform Support**
-   - Fixed critical desktop build issues (#2427)
-   - Enabled cross-platform development for desktop targets
-
-3. **Critical Bug Fixes**
-   - Fixed savings account creation failures (#2412, #2405)
-   - Resolved center/group/client activation issues (#2419, #2418)
-   - Fixed database constraint failures (#2442)
-   - Fixed type errors in savings account summary (#2434)
-
-4. **Code Quality Improvements**
-   - Cleaned up Ktorfit configuration and removed duplicates (#2446)
-   - Merged kmp-impl branch into development (#2447)
-   - Fixed scrolling issues in landscape mode (#2451)
-
-5. **UI/UX Implementations**
-   - Client Savings Accounts UI (#2472)
-   - Client Loan Accounts UI (#2477)
-   - Client Identities List Screen (#2483)
-   - Client Upcoming Charges UI (#2488)
-   - Share Accounts UI (#2495)
-
-6. **Mobile Wallet Enhancements**
-   - Improved account ordering by active state (#1922)
-   - Added validation for amount and description fields (#1925)
-
-### Code Review Contributions
-
-- **Total Reviews:** 30+ PRs across June-September
-- **Focus Areas:** 
-  - CMP migrations (Groups, Datatable, Document, Offline, Client, Reports)
-  - Authentication flows (Mifos Mobile)
-  - UI implementations (Client features, deposits, signatures)
-  - Bug fixes and feature enhancements
-
-### Cross-Repository Impact
-
-- **Android Client:** 18 authored PRs + 20+ reviewed PRs
-- **Mifos Mobile:** 9 reviewed PRs (authentication & UI components)
-- **Mobile Wallet:** 2 authored PRs + 2 reviewed PRs
-
----
-
 ## Technical Skills Demonstrated
 
 - Kotlin Multiplatform (KMP/CMP) architecture
 - Jetpack Compose for UI development
 - Dependency Injection (Koin migration from Hilt)
 - Network layer (Ktorfit)
-- Database management (Room/SQLDelight)
+- Database management (Room)
 - Cross-platform mobile development
 - Git workflow and collaborative code review practices
 - Bug diagnosis and resolution
@@ -214,25 +187,17 @@
 
 ## Impact
 
-The KMP migration project enables:
-- **Code Sharing:** Shared business logic across Android, iOS, and Desktop platforms
+After my migration of the Android client project, this project enables
+- **Code Sharing:** Shared business logic across Android, iOS, web and Desktop platforms
 - **Maintainability:** Single codebase for core features reduces maintenance overhead
 - **Scalability:** Easier to add new platforms in the future
 - **Performance:** Improved app stability through bug fixes and refactoring
-- **Team Collaboration:** Active participation in code reviews helped maintain code quality
 
 ---
 
 ## Conclusion
 
-Throughout the MSoC-2025 internship period (June-September 2025), I successfully contributed to the migration of the Mifos Android Client to Kotlin Multiplatform. My work included:
+My journey with the Mifos Initiative began in March 2024, even before the official MSoC period. Since then, I have been a regular contributor to the Mifos Field Officer application, with over 80 commits, making me one of the top three contributors to the project. Through this early and consistent involvement, I gained deep insights into cross-platform mobile development, modern Android architecture, and large-scale codebase migration, along with a strong understanding of collaborative development in open-source environments.
 
-- **18 authored PRs** focusing on KMP migration, critical bug fixes, and new UI implementations
-- **30+ code reviews** helping teammates with feature implementations and ensuring code quality
-- **Cross-repository contributions** spanning Android Client, Mifos Mobile, and Mobile Wallet
+I had a great experience throughout this four-month-long program. I received tremendous support from the community as well as my mentor, Rajan Maurya, during this three-month journey. I would also like to thank Ed Cable for his outstanding support. The weekly check-ins were excellent. I had a great opportunity to bond with the community, as well as solve some problems that I encountered in the interim. I learned and grew a great deal as a result of this experience. It would be my pleasure to contribute to this organization in the future, as well as to assist new contributors to get started in this community.
 
-Key highlights include fixing critical bugs that were blocking user workflows, implementing modern UI screens for client management features, and successfully merging the kmp-impl branch into development. The experience provided deep insights into cross-platform mobile development, modern Android architecture, and the importance of collaborative development in open-source projects.
-
----
-
-**End of Report**
