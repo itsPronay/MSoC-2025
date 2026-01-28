@@ -1,13 +1,25 @@
 # MSoC-2025 Internship Report
 
-### Project Overview
+| Field | Details |
+|-------|---------|
+| **Intern** | Pronay Sarker |
+| **Project** | Migration of Android Client to Kotlin Multiplatform (KMP) |
+| **Project Proposal** | [GSoC Proposal 2025](https://github.com/itsPronay/MSoC-2025/blob/main/google-summer-of-code-proposal-2025.pdf) |
+| **Organization** | Mifos Initiative |
+| **Official MSoC Duration** | June 2025 - September 2025 |
 
-**Project:** Migration of Android Client to Kotlin Multiplatform (KMP) <br>
-**Project Proposal:** [GSoC Proposal 2025](https://github.com/itsPronay/MSoC-2025/blob/main/google-summer-of-code-proposal-2025.pdf) <br>
-**Organization:** Mifos Initiative  
-**Official MSoC Duration:** June 2025 - September 2025  
 
----
+### Project Description
+The primary goal of my project was to migrate the Mifos Android Client application from a traditional Android-only codebase to a Kotlin Multiplatform (KMP) architecture. This ambitious migration project aimed to enable code sharing across multiple platforms - Android, iOS, web and Desktop - by moving business logic, data layers, and UI components to a common codebase.
+
+Key Objectives:
+- Migrate Core Modules: Transform core modules (database, network, common utilities) to KMP-compatible implementations
+- Feature Migration: Systematically migrate feature modules to Compose Multiplatform (CMP) to enable cross-platform UI
+- Dependency Injection Modernization: Replace Hilt with Koin for better multiplatform support
+- Maintain Stability: Ensure the migration doesn't break existing functionality and user workflows
+- Code Quality: Improve overall code architecture and maintainability during the migration process
+
+My role in this project involved migrating the modules, fixing bugs that emerged during the transition, implementing new UI features using Compose Multiplatform, and actively reviewing peer contributions to maintain code quality throughout the migration process.
 
 ## Pre-MSoC Work (March - May 2025)
 
@@ -195,9 +207,14 @@ After my migration of the Android client project, this project enables
 
 ---
 
+
 ## Conclusion
 
 My journey with the Mifos Initiative began in March 2024, even before the official MSoC period. Since then, I have been a regular contributor to the Mifos Field Officer application, with over 80 commits, making me one of the top three contributors to the project. Through this early and consistent involvement, I gained deep insights into cross-platform mobile development, modern Android architecture, and large-scale codebase migration, along with a strong understanding of collaborative development in open-source environments.
 
 I had a great experience throughout this four-month-long program. I received tremendous support from the community as well as my mentor, Rajan Maurya, during this three-month journey. I would also like to thank Ed Cable for his outstanding support. The weekly check-ins were excellent. I had a great opportunity to bond with the community, as well as solve some problems that I encountered in the interim. I learned and grew a great deal as a result of this experience. It would be my pleasure to contribute to this organization in the future, as well as to assist new contributors to get started in this community.
+
+
+> [!WARNING]
+> Live document, Links will be updated
 
